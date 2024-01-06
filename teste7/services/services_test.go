@@ -5,7 +5,7 @@ import (
 	"log"
 	"testing"
 
-	"github.com/stretchr/testify/assert"
+	"github.com/go-playground/assert/v2"
 )
 
 func TestDevolveScore(t *testing.T) {

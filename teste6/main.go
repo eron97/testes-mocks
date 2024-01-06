@@ -26,3 +26,10 @@ func main() {
 	defer connection.Close()
 
 }
+
+/* OUTPUT TERMINAL
+
+Banco de dados ON
+Score 670 do user Primeiro
+
+*/
