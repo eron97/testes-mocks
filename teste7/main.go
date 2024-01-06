@@ -21,7 +21,8 @@ func main() {
 
 	fmt.Println("Banco de dados ON")
 
-	services.DevolveScore(mysqlDB)
+	resultado := services.DevolveScore(mysqlDB)
+	fmt.Println(resultado)
 
 	mysqlDB.Ponteiro.Close()
 

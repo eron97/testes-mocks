@@ -28,6 +28,7 @@ func DevolveScore(db database.Database) string {
 	var result string
 
 	users, _ := db.GetAllUsers()
+
 	// Processa score dos usuários
 
 	// Devolve score dos usuários
