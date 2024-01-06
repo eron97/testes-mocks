@@ -1,14 +1,13 @@
 package main
 
-import (
-	"github.com/eron97/testes-mocks.git/teste2/routes"
-	"github.com/gin-gonic/gin"
-)
+// criando mock APIClient
+type MockAPIClient struct{}
+
+func (c *MockAPIClient) Get(url string) (string, error) {
+	return "Resposta do mock API", nil
+}
 
 func main() {
-	router := gin.Default()
+	// Usando implementação padrão
 
-	routes.SetupRoutes(router)
-
-	router.Run(":8080")
 }
